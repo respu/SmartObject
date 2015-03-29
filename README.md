@@ -18,8 +18,7 @@ class MyObject : public Core::SmartObject
     // SmartObject does not require any constuctor parameters
 };
 
-Core::SmartPtr< MyObject > sptr_to_object =
-    new MyObject();
+Core::SmartPtr< MyObject > sptr_to_object( new MyObject() );
 ```
 
 Use as you would `std::shared_ptr`.
