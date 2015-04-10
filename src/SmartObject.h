@@ -54,13 +54,11 @@ namespace Core
     private:
         // -------------------------------------------------------------------- Private Typedefs
         using Atomic_t = atomic_uint32_t;
-        
-        
+
     public:
         // -------------------------------------------------------------------- Public Typedefs
-        using Refcount_t    = uint_fast32_t;
-        
-        
+        using Refcount_t = uint_fast32_t;
+
     private:
         // -------------------------------------------------------------------- Friend Classes
         friend class SmartPtr_Base;
