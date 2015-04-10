@@ -3,7 +3,7 @@ Basic thread-safe non-locking intrinsic-refcount smart object system for C++11 a
 
 
 ## Why?
-Standard shared pointers in C++ allocated a separate piece of memory to hold the reference count. This can negatively impact the performance of any code that has a lot of smart pointers being added and removed from different places due to the extra memory hit incurred when the reference count is updated.
+Standard shared pointers in C++ allocate a separate piece of memory to hold the reference count. This can negatively impact the performance of any code that has a lot of smart pointers being added and removed from different places due to the extra memory hit incurred when the reference count is updated.
 
 The SmartObject class in this repository adds an intrinsic thread-safe non-locking reference counter that is included directly in your object.
 
